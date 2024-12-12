@@ -115,3 +115,24 @@ CREATE TABLE inscrit (
     FOREIGN KEY (id_evenement) REFERENCES evenement(id),
     FOREIGN KEY (id_participant) REFERENCES participer(id) 
 );
+
+
+--le requette 1:
+ SELECT nom,role FROM `membre` ;
+
+
+ --le requette 2:
+ SELECT * 
+FROM evenement
+WHERE date_evenement = '2024-02-15';
+ --le requette 3 : 
+ SELECT * 
+FROM evenement
+WHERE budget>5000;
+--le requette 4;
+SELECT SUM(id)
+FROM evenement;
+--le requette 5 ;
+SELECT AVG(budget) 
+FROM evenement;
+--la requette6 :
